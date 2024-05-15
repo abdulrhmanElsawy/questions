@@ -1171,7 +1171,7 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "a",
+        "correct": "b",
         "lecture": 8
     },
     {
