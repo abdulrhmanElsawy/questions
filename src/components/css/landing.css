@@ -109,7 +109,7 @@
 
 
 .landing .question-content .question .answers .input label{
-    
+    width: 80%;
 }
 
 .landing .question-content .question .answers .input.correct label{
