@@ -1862,7 +1862,7 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "b",
+        "correct": "a",
         "lecture": 6
     },
     {
