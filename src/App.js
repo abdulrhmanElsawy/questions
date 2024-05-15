@@ -15,18 +15,9 @@ function App() {
 
 return (
     <div className="App">
-            <Routes>
             
+        <Landing />
 
-            <Route path="/" element={
-                    <>
-                        <Landing />
-                    </>
-                } />
-
-
-
-        </Routes>
 
         
     </div>
