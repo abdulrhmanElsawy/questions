@@ -1,0 +1,121 @@
+
+.made-by{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: #00283a;
+    color: #70ba65;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.made-by a{
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+
+
+.landing h1 {
+    text-align: center;
+    font-size: 41px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+.landing .options{
+    margin-bottom: 60px;
+}
+
+.landing .options select {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    padding: 6px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+.landing .question-content{
+    
+}
+
+.landing .question-content .wrong-answer{
+    position: absolute;
+    top: -30px;
+    font-size: 21px;
+    color: #b20000;
+}
+
+.landing .question-content .right-answer{
+    position: absolute;
+    top: -30px;
+    font-size: 21px;
+    color: #0fc00f;
+}
+
+
+.landing .question-content .question{
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    padding: 18px;
+    min-height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 39px;
+    position: relative;
+}
+
+.landing .question-content .question h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+.landing .question-content .question .answers{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 24px;
+}
+
+.landing .question-content .question .answers .input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.landing .question-content .question .answers .input input{
+    width: 30px;
+    height: 35px;
+}
+
+
+.landing .question-content .question .answers .input label{
+    
+}
+
+.landing .question-content .question .answers .input.correct label{
+    color: #0aa50a;
+}
+
+.landing .question-content .question .answers .input.wrong label{
+    color: #b20000;
+}

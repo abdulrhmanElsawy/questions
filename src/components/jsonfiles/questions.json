@@ -1,0 +1,3571 @@
+[
+    
+    {
+        "lecture" : 7,
+        "id": 1,
+        "question": "What is the purpose of ETL?",
+        "answers": {
+            "a": "To reshape relevant data for the data warehouse",
+            "b": "To store raw data",
+            "c": "To delete unnecessary data"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 2,
+        "question": "What happens if the source data is not extracted correctly in ETL?",
+        "answers": {
+            "a": "It will be transformed automatically",
+            "b": "Query processing could not happen",
+            "c": "The data will still be useful"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 3,
+        "question": "What is needed for operational systems upgrade in data extraction?",
+        "answers": {
+            "a": "One-time extractions and data conversions",
+            "b": "Multiple extractions",
+            "c": "Only data conversions"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 4,
+        "question": "What must be extracted for a data warehouse?",
+        "answers": {
+            "a": "Data from one source",
+            "b": "Only new data",
+            "c": "Data from many disparate sources"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 5,
+        "question": "What is the purpose of job sequencing in data extraction?",
+        "answers": {
+            "a": "To start all jobs simultaneously",
+            "b": "To ensure the beginning of one job waits until the previous job has finished",
+            "c": "To prioritize jobs based on size"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 6,
+        "question": "What is a major effort within data transformation?",
+        "answers": {
+            "a": "Storing data in raw format",
+            "b": "Improvement of data quality",
+            "c": "Deleting old data"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 7,
+        "question": "What is the first task in data transformation?",
+        "answers": {
+            "a": "Conversion",
+            "b": "Summarization",
+            "c": "Selection"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 8,
+        "question": "What is the task of splitting/joining in data transformation?",
+        "answers": {
+            "a": "To delete data",
+            "b": "To manipulate and combine data",
+            "c": "To store data as it is"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 9,
+        "question": "Why is data conversion important?",
+        "answers": {
+            "a": "To keep data in raw format",
+            "b": "To standardize data and make fields usable",
+            "c": "To delete unnecessary fields"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 10,
+        "question": "What is data summarization?",
+        "answers": {
+            "a": "Keeping data at the lowest level of detail",
+            "b": "Deleting detailed data",
+            "c": "Aggregating data to a higher level"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 11,
+        "question": "What does enrichment involve in data transformation?",
+        "answers": {
+            "a": "Removing unnecessary fields",
+            "b": "Rearranging and simplifying fields",
+            "c": "Converting data formats"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 12,
+        "question": "What is the initial load in data loading?",
+        "answers": {
+            "a": "Loading changes incrementally",
+            "b": "Applying only new data",
+            "c": "Populating all data warehouse tables for the first time"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 13,
+        "question": "What is an incremental load?",
+        "answers": {
+            "a": "Loading all data again",
+            "b": "Applying ongoing changes periodically",
+            "c": "Deleting old data before loading new data"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 14,
+        "question": "What does a full refresh involve in data loading?",
+        "answers": {
+            "a": "Incremental changes",
+            "b": "Erasing and reloading data",
+            "c": "Keeping old data"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 15,
+        "question": "What does the load process do if the target table already has data?",
+        "answers": {
+            "a": "Preserves existing data",
+            "b": "Wipes out existing data",
+            "c": "Appends new data"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 16,
+        "question": "What is the append process?",
+        "answers": {
+            "a": "Replaces existing data",
+            "b": "Adds incoming data to existing data",
+            "c": "Deletes duplicate data"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 17,
+        "question": "What happens during a destructive merge?",
+        "answers": {
+            "a": "Keeps all old data",
+            "b": "Updates matching records and adds new ones",
+            "c": "Only adds new records"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 18,
+        "question": "What is a constructive merge?",
+        "answers": {
+            "a": "Deletes old records",
+            "b": "Updates existing records and adds new ones",
+            "c": "Adds new records and marks them as superseding old ones"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 19,
+        "question": "What are format revisions in data transformation?",
+        "answers": {
+            "a": "Converting data into a new structure",
+            "b": "Keeping original data format",
+            "c": "Deleting unnecessary formats"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 20,
+        "question": "What are calculated and derived values?",
+        "answers": {
+            "a": "Raw data values",
+            "b": "Values computed from other data",
+            "c": "Non-essential data values"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 21,
+        "question": "What does the splitting of single fields involve?",
+        "answers": {
+            "a": "Combining multiple fields",
+            "b": "Dividing a field into multiple parts",
+            "c": "Deleting unnecessary parts"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 22,
+        "question": "What does merging of information involve?",
+        "answers": {
+            "a": "Keeping data separate",
+            "b": "Combining data from different sources",
+            "c": "Deleting redundant data"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 23,
+        "question": "What is character set conversion?",
+        "answers": {
+            "a": "Changing data type",
+            "b": "Converting character encoding",
+            "c": "Deleting non-essential characters"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 24,
+        "question": "What is the conversion of units of measurements?",
+        "answers": {
+            "a": "Standardizing measurement units",
+            "b": "Keeping original units",
+            "c": "Deleting non-standard units"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 25,
+        "question": "What does date/time conversion involve?",
+        "answers": {
+            "a": "Keeping original date/time format",
+            "b": "Standardizing date/time formats",
+            "c": "Deleting non-essential date/time fields"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 26,
+        "question": "What is key restructuring?",
+        "answers": {
+            "a": "Keeping original keys",
+            "b": "Deleting old keys",
+            "c": "Modifying keys for consistency"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 27,
+        "question": "What is deduplication?",
+        "answers": {
+            "a": "Keeping all records",
+            "b": "Removing duplicate records",
+            "c": "Adding new duplicates"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 28,
+        "question": "What does the ETL tool do?",
+        "answers": {
+            "a": "Transforms raw data",
+            "b": "Loads data",
+            "c": "Both transforming and loading data"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 29,
+        "question": "What is a major challenge in data extraction?",
+        "answers": {
+            "a": "Data quality",
+            "b": "Exception handling",
+            "c": "Format conversion"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 30,
+        "question": "What is the main goal of ETL?",
+        "answers": {
+            "a": "To delete old data",
+            "b": "To store raw data",
+            "c": "To transform and load data into a useful format"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 31,
+        "question": "ETL functions reshape the relevant data from the source systems into useful information.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 32,
+        "question": "If the source data is not extracted correctly, cleansed, and integrated, the backbone of the data warehouse, could not happen.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 33,
+        "question": "List of data extraction issues...",
+        "answers": {
+            "a": "Identify source applications and source structures.",
+            "b": "For each data source, define whether the extraction process is manual or tool-based",
+            "c": "Determine how to handle input records that cannot be extracted",
+            "d": "All the above"
+        },
+        "correct": "d"
+    },
+    {
+        "lecture" : 7,
+        "id": 34,
+        "question": "Determine whether the beginning of one job in an extraction job stream has to wait until the previous job has finished successfully.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Method of extraction",
+            "c": "Job sequencing"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 35,
+        "question": "Determine how to handle input records that cannot be extracted.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Exception handling",
+            "c": "Job sequencing"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 36,
+        "question": "All the extracted data must be made unusable in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 37,
+        "question": "Data quality is not important in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 38,
+        "question": "Beginning of the whole process of data transformation. Select either whole records or parts of several records from the source systems.",
+        "answers": {
+            "a": "Selection",
+            "b": "Conversion",
+            "c": "Splitting"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 39,
+        "question": "You will be splitting the selected parts even further during data transformation.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 40,
+        "question": "It is important task to make the fields usable and understandable to the users.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting",
+            "c": "Joining"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 41,
+        "question": "Rearrangement and simplification of individual fields to make them more useful for the data warehouse environment.",
+        "answers": {
+            "a": "Splitting",
+            "b": "Enrichment",
+            "c": "Joining"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 42,
+        "question": "Major Transformation Types...",
+        "answers": {
+            "a": "Format Revisions",
+            "b": "Calculated and Derived Values.",
+            "c": "Splitting of Single Fields",
+            "d": "All the above"
+        },
+        "correct": "d"
+    },
+    {
+        "lecture" : 7,
+        "id": 43,
+        "question": "Populating all the data warehouse tables for the very first time.",
+        "answers": {
+            "a": "Initial Load",
+            "b": "Incremental Load",
+            "c": "Full Refresh"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 44,
+        "question": "Incremental Load \u2014 applying ongoing changes as necessary in a periodic manner.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 45,
+        "question": "Completely erasing the contents of one or more tables and reloading with fresh data.",
+        "answers": {
+            "a": "Incremental Load",
+            "b": "Full Refresh"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 46,
+        "question": "The load process wipes out the existing data and applies the data from the incoming file.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 47,
+        "question": "Destructive Merge is an extension of the load.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b"
+    },
+    {
+        "lecture" : 7,
+        "id": 48,
+        "question": "Destructive Merge applies incoming data to the target data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a"
+    },
+    {
+        "lecture" : 7,
+        "id": 49,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, update the matching target record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Destructive Merge"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 50,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, leave the existing record, add the incoming record, and mark the added record as superseding the old record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Constructive Merge"
+        },
+        "correct": "c"
+    },
+    {
+        "lecture" : 7,
+        "id": 51,
+        "question": "ETL Tools...",
+        "answers": {
+            "a": "NiFi",
+            "b": "Talend",
+            "c": "Both"
+        },
+        "correct": "c"
+    },
+    {
+        "id": 52,
+        "question": "What does OLAP stand for?",
+        "answers": {
+            "a": "Online Analytical Processing",
+            "b": "Online Analytical Programming",
+            "c": "Online Analytical Presentation"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 53,
+        "question": "Which of the following is NOT a characteristic of OLAP?",
+        "answers": {
+            "a": "It is a technology for extracting and viewing business data",
+            "b": "It is a database design technique",
+            "c": "It enables analysts to view data from different points of view"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 54,
+        "question": "OLAP databases are divided into one or more what?",
+        "answers": {
+            "a": "Tables",
+            "b": "Cubes",
+            "c": "Rows"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 55,
+        "question": "What does OLAP allow analysts to do with data?",
+        "answers": {
+            "a": "Group, aggregate, and join data",
+            "b": "Delete and update data",
+            "c": "Only view data"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 56,
+        "question": "Which OLAP operation is also known as consolidation?",
+        "answers": {
+            "a": "Roll-up",
+            "b": "Drill-down",
+            "c": "Pivot"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 57,
+        "question": "What does the drill-down operation in OLAP do?",
+        "answers": {
+            "a": "Aggregates data",
+            "b": "Fragments data into smaller parts",
+            "c": "Rotates data axes"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 58,
+        "question": "Which OLAP operation involves selecting one dimension to create a new sub-cube?",
+        "answers": {
+            "a": "Slice",
+            "b": "Dice",
+            "c": "Pivot"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 59,
+        "question": "What does the pivot operation in OLAP do?",
+        "answers": {
+            "a": "Reduces dimensions",
+            "b": "Climbs up concept hierarchy",
+            "c": "Rotates data axes"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 60,
+        "question": "What type of data model does MOLAP utilize?",
+        "answers": {
+            "a": "Relational",
+            "b": "Multidimensional",
+            "c": "Hierarchical"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 61,
+        "question": "What is a major advantage of MOLAP?",
+        "answers": {
+            "a": "High scalability",
+            "b": "Fastest indexing to pre-computed summarized data",
+            "c": "Low storage utilization"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 62,
+        "question": "What is a disadvantage of MOLAP?",
+        "answers": {
+            "a": "High data efficiency",
+            "b": "Low storage utilization",
+            "c": "Slow query performance"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 63,
+        "question": "Which OLAP model uses a relational database to store both base data and dimension tables?",
+        "answers": {
+            "a": "MOLAP",
+            "b": "HOLAP",
+            "c": "ROLAP"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 64,
+        "question": "What is an advantage of ROLAP?",
+        "answers": {
+            "a": "Fast computation",
+            "b": "High data efficiency",
+            "c": "Low resource demand"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 65,
+        "question": "What is a drawback of ROLAP?",
+        "answers": {
+            "a": "High resource demand",
+            "b": "Slow query performance",
+            "c": "Low data efficiency"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 66,
+        "question": "What is Hybrid OLAP a mixture of?",
+        "answers": {
+            "a": "MOLAP and ROLAP",
+            "b": "ROLAP and HOLAP",
+            "c": "MOLAP and HOLAP"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 67,
+        "question": "Which OLAP model stores aggregated or computed data in a multidimensional cube?",
+        "answers": {
+            "a": "MOLAP",
+            "b": "ROLAP",
+            "c": "HOLAP"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 68,
+        "question": "What is a benefit of Hybrid OLAP?",
+        "answers": {
+            "a": "Greater complexity",
+            "b": "Economizes disk space",
+            "c": "Slow performance"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 69,
+        "question": "What is a drawback of Hybrid OLAP?",
+        "answers": {
+            "a": "Higher resource demand",
+            "b": "Greater complexity",
+            "c": "Low storage utilization"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 70,
+        "question": "What is the objective of OLAP?",
+        "answers": {
+            "a": "Support very fast, iterative, and ad-hoc decision-making",
+            "b": "Support predefined queries only",
+            "c": "Support only detailed data analysis"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 71,
+        "question": "What are the basic analytical operations of OLAP?",
+        "answers": {
+            "a": "Roll-up, Drill-down, Slice, and Pivot",
+            "b": "Aggregate, Filter, Sort, and Join",
+            "c": "Delete, Update, Insert, and Select"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 72,
+        "question": "What does the roll-up operation in OLAP involve?",
+        "answers": {
+            "a": "Reducing dimensions or climbing up concept hierarchy",
+            "b": "Increasing dimensions",
+            "c": "Rotating data axes"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 73,
+        "question": "What does the slice operation in OLAP involve?",
+        "answers": {
+            "a": "Creating a new sub-cube by selecting one dimension",
+            "b": "Creating a new sub-cube by selecting multiple dimensions",
+            "c": "Aggregating data"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 74,
+        "question": "What does the pivot operation in OLAP involve?",
+        "answers": {
+            "a": "Rotating data axes for substitute presentation of data",
+            "b": "Aggregating data",
+            "c": "Fragmenting data"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 75,
+        "question": "What is an advantage of MOLAP?",
+        "answers": {
+            "a": "Easier to use for inexperienced users",
+            "b": "Contains detailed data",
+            "c": "Low storage utilization"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 76,
+        "question": "What is a disadvantage of MOLAP?",
+        "answers": {
+            "a": "High storage utilization",
+            "b": "Difficult to change dimensions without re-aggregating",
+            "c": "Low data efficiency"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 77,
+        "question": "Which tool is an example of MOLAP?",
+        "answers": {
+            "a": "SQL Server Data Tools (SSDT)",
+            "b": "Clear Analytics",
+            "c": "Both"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 78,
+        "question": "What is a benefit of Hybrid OLAP?",
+        "answers": {
+            "a": "Allows faster performance for all types of data",
+            "b": "Higher complexity",
+            "c": "Low data efficiency"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 79,
+        "question": "Which OLAP model is primarily used for data stored in a relational database?",
+        "answers": {
+            "a": "MOLAP",
+            "b": "ROLAP",
+            "c": "HOLAP"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 80,
+        "question": "What is a drawback of ROLAP?",
+        "answers": {
+            "a": "High resource demand",
+            "b": "Fast query performance",
+            "c": "Low data efficiency"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 81,
+        "question": "What does OLAP enable analysts to do?",
+        "answers": {
+            "a": "Extract and view business data from different points of view",
+            "b": "Only view data",
+            "c": "Delete and update data"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 82,
+        "question": "ETL functions reshape the relevant data from the source systems into useful information.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 83,
+        "question": "If the source data is not extracted correctly, cleansed, and integrated, the backbone of the data warehouse, could not happen.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 84,
+        "question": "List of data extraction issues...",
+        "answers": {
+            "a": "Identify source applications and source structures.",
+            "b": "For each data source, define whether the extraction process is manual or tool-based",
+            "c": "Determine how to handle input records that cannot be extracted",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "8"
+    },
+    {
+        "id": 85,
+        "question": "Determine whether the beginning of one job in an extraction job stream has to wait until the previous job has finished successfully.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Method of extraction",
+            "c": "Job sequencing"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 86,
+        "question": "Determine how to handle input records that cannot be extracted.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Exception handling",
+            "c": "Job sequencing"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 87,
+        "question": "All the extracted data must be made unusable in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 88,
+        "question": "Data quality is not important in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 89,
+        "question": "Beginning of the whole process of data transformation. Select either whole records or parts of several records from the source systems.",
+        "answers": {
+            "a": "Selection",
+            "b": "Conversion",
+            "c": "Splitting"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 90,
+        "question": "You will be splitting the selected parts even further during data transformation.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 91,
+        "question": "It is important task to make the fields usable and understandable to the users.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting",
+            "c": "Joining"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 92,
+        "question": "Rearrangement and simplification of individual fields to make them more useful for the data warehouse environment.",
+        "answers": {
+            "a": "Splitting",
+            "b": "Enrichment",
+            "c": "Joining"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 93,
+        "question": "Major Transformation Types...",
+        "answers": {
+            "a": "Format Revisions",
+            "b": "Calculated and Derived Values.",
+            "c": "Splitting of Single Fields",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "8"
+    },
+    {
+        "id": 94,
+        "question": "Populating all the data warehouse tables for the very first time.",
+        "answers": {
+            "a": "Initial Load",
+            "b": "Incremental Load",
+            "c": "Full Refresh"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 95,
+        "question": "Incremental Load \u2014 applying ongoing changes as necessary in a periodic manner.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 96,
+        "question": "Completely erasing the contents of one or more tables and reloading with fresh data.",
+        "answers": {
+            "a": "Incremental Load",
+            "b": "Full Refresh"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 97,
+        "question": "The load process wipes out the existing data and applies the data from the incoming file.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 98,
+        "question": "Destructive Merge is an extension of the load.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 99,
+        "question": "Destructive Merge applies incoming data to the target data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 100,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, update the matching target record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Destructive Merge"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 101,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, leave the existing record, add the incoming record, and mark the added record as superseding the old record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Constructive Merge"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 102,
+        "question": "ETL Tools...",
+        "answers": {
+            "a": "NiFi",
+            "b": "Talend",
+            "c": "Both"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 103,
+        "question": "ROLAP servers store and manage warehouse data using RDBMS, and OLAP middleware fills in the gaps.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 104,
+        "question": "Advantages of ROLAP model...",
+        "answers": {
+            "a": "High data efficiency.",
+            "b": "Scalability.",
+            "c": "All"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 105,
+        "question": "Drawbacks of ROLAP model...",
+        "answers": {
+            "a": "Demand for higher resources.",
+            "b": "Aggregately data limitations.",
+            "c": "Slow query performance.",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "8"
+    },
+    {
+        "id": 106,
+        "question": "What is a mixture of both ROLAP and MOLAP?",
+        "answers": {
+            "a": "Hybrid OLAP",
+            "b": "ROLAP"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 107,
+        "question": "Drawbacks of Hybrid OLAP...",
+        "answers": {
+            "a": "Greater complexity level.",
+            "b": "Potential overlaps.",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 108,
+        "question": "The major drawback in HOLAP systems is that it supports both ROLAP and MOLAP tools and applications.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 109,
+        "question": "Adhoc analysis refers to the process of analyzing data in a flexible and exploratory manner.",
+        "answers": {
+            "a": "Adhoc analysis",
+            "b": "TV analysis"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 110,
+        "question": "Characteristics of Adhoc analysis...",
+        "answers": {
+            "a": "It's typically unplanned and focuses on immediate needs or questions.",
+            "b": "Ad hoc analyses are often one-time or infrequent tasks.",
+            "c": "A&B"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 111,
+        "question": "Ad hoc analysis is useful for quick insights, troubleshooting.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 112,
+        "question": "Interactive analysis involves a more structured and iterative approach to data exploration.",
+        "answers": {
+            "a": "Ad hoc analysis",
+            "b": "Interactive analysis"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 113,
+        "question": "Interactive analysis allows users to interact with data visualizations, dashboards, and reports in real-time.",
+        "answers": {
+            "a": "Ad hoc analysis",
+            "b": "Interactive analysis"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 114,
+        "question": "Characteristics of Interactive analysis...",
+        "answers": {
+            "a": "It often involves predefined dashboards or reports that users can interact with to drill down into details.",
+            "b": "Enables users to manipulate data visualizations, change parameters, and perform analysis on-the-fly.",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "8"
+    },
+    {
+        "id": 115,
+        "question": "Interactive analysis supports ongoing monitoring.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 116,
+        "question": "Interactive analysis is valuable for continuous monitoring and trend analysis.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 117,
+        "question": "Interactive analysis is more spontaneous and focused on immediate needs.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 118,
+        "question": "Ad hoc analysis is more structured, iterative, and conducive to ongoing data exploration.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 119,
+        "question": "Query performance is fastest in...",
+        "answers": {
+            "a": "MOLAP",
+            "b": "ROLAP",
+            "c": "HOLAP"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 120,
+        "question": "ROLAP needs to manage both relational DBMS and metadata layer.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 121,
+        "question": "OLAP focuses on information out.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 122,
+        "question": "OLTP is based on the entity relationship model.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 123,
+        "question": "OLTP is used to analyze the business.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "8"
+    },
+    {
+        "id": 124,
+        "question": "Data volume in MOLAP is limited by physical cube.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "8"
+    },
+    {
+        "id": 125,
+        "question": "What is a conformed dimension?",
+        "answers": {
+            "a": "A dimension used in different facts with the same meaning and value",
+            "b": "A dimension used multiple times within the same fact",
+            "c": "A dimension with alternate versions"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 126,
+        "question": "What is a degenerate dimension?",
+        "answers": {
+            "a": "A dimension with no actual dimension table",
+            "b": "A dimension that changes slowly over time",
+            "c": "A dimension with multiple alternate versions"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 127,
+        "question": "Which type of dimension is used for handling multi-valued dimensions?",
+        "answers": {
+            "a": "Conformed dimension",
+            "b": "Bridge table",
+            "c": "Role-playing dimension"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 128,
+        "question": "What is the primary key of the Account-Insured_Person bridge table?",
+        "answers": {
+            "a": "Surrogate Account and Insured_Person foreign keys",
+            "b": "Policy number",
+            "c": "Customer ID"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 129,
+        "question": "What is a weighting factor in a bridge table?",
+        "answers": {
+            "a": "A way to allocate numeric additive facts across insured persons",
+            "b": "A way to identify primary policy holders",
+            "c": "A method to reduce data redundancy"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 130,
+        "question": "How is a hot swappable dimension defined?",
+        "answers": {
+            "a": "A dimension that has multiple alternate versions that can be swapped at query time",
+            "b": "A dimension used multiple times within the same fact",
+            "c": "A dimension that changes rapidly over time"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 131,
+        "question": "What is a role-playing dimension?",
+        "answers": {
+            "a": "A dimension used multiple times within the same fact but with different meanings",
+            "b": "A dimension with alternate versions",
+            "c": "A dimension used in different facts with the same meaning and value"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 132,
+        "question": "Which data warehouse development approach is supported by Bill Inmon?",
+        "answers": {
+            "a": "Top-down development approach",
+            "b": "Bottom-up development approach",
+            "c": "Middle-out development approach"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 133,
+        "question": "What is a key characteristic of the top-down approach?",
+        "answers": {
+            "a": "Analyze global business needs, plan, design, and implement as a whole",
+            "b": "Incrementally build data marts",
+            "c": "Focus on a specific department's needs first"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 134,
+        "question": "What is a key disadvantage of the top-down approach?",
+        "answers": {
+            "a": "High exposure to risk of failure",
+            "b": "Faster implementation",
+            "c": "Low initial costs"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 135,
+        "question": "Which data warehouse development approach is supported by Ralph Kimball?",
+        "answers": {
+            "a": "Top-down development approach",
+            "b": "Bottom-up development approach",
+            "c": "Middle-out development approach"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 136,
+        "question": "What is a key characteristic of the bottom-up approach?",
+        "answers": {
+            "a": "Incrementally build data marts",
+            "b": "Analyze global business needs first",
+            "c": "High initial costs"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 137,
+        "question": "What is a key disadvantage of the bottom-up approach?",
+        "answers": {
+            "a": "Each data mart has its own narrow view of data",
+            "b": "Long-term implementations",
+            "c": "High initial costs"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 138,
+        "question": "What is a hub-and-spoke architecture?",
+        "answers": {
+            "a": "A centralized data warehouse with several dependent data marts",
+            "b": "Independent data marts",
+            "c": "A centralized data warehouse without dependent data marts"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 139,
+        "question": "What is a centralized data warehouse architecture?",
+        "answers": {
+            "a": "A centralized data warehouse without dependent data marts",
+            "b": "Independent data marts",
+            "c": "A data mart bus architecture"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 140,
+        "question": "What is a key benefit of the centralized data warehouse architecture?",
+        "answers": {
+            "a": "Provides a holistic view of the enterprise",
+            "b": "Reduces data redundancy",
+            "c": "Improves data latency"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 141,
+        "question": "What is a key disadvantage of independent data marts?",
+        "answers": {
+            "a": "Inconsistent data definitions",
+            "b": "High initial costs",
+            "c": "Centralized control"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 142,
+        "question": "What is a data mart bus architecture?",
+        "answers": {
+            "a": "Individual marts linked via middleware",
+            "b": "Independent data marts",
+            "c": "A centralized data warehouse without dependent data marts"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 143,
+        "question": "What is a key benefit of the data mart bus architecture?",
+        "answers": {
+            "a": "Maintains data consistency across the enterprise",
+            "b": "High initial costs",
+            "c": "Reduces data redundancy"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 144,
+        "question": "What is a conformed dimension?",
+        "answers": {
+            "a": "A dimension used in different facts with the same meaning and value",
+            "b": "A dimension used multiple times within the same fact",
+            "c": "A dimension with alternate versions"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 145,
+        "question": "What is a degenerate dimension?",
+        "answers": {
+            "a": "A dimension with no actual dimension table",
+            "b": "A dimension that changes slowly over time",
+            "c": "A dimension with multiple alternate versions"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 146,
+        "question": "Which type of dimension is used for handling multi-valued dimensions?",
+        "answers": {
+            "a": "Conformed dimension",
+            "b": "Bridge table",
+            "c": "Role-playing dimension"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 147,
+        "question": "What is the primary key of the Account-Insured_Person bridge table?",
+        "answers": {
+            "a": "Surrogate Account and Insured_Person foreign keys",
+            "b": "Policy number",
+            "c": "Customer ID"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 148,
+        "question": "What is a weighting factor in a bridge table?",
+        "answers": {
+            "a": "A way to allocate numeric additive facts across insured persons",
+            "b": "A way to identify primary policy holders",
+            "c": "A method to reduce data redundancy"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 149,
+        "question": "How is a hot swappable dimension defined?",
+        "answers": {
+            "a": "A dimension that has multiple alternate versions that can be swapped at query time",
+            "b": "A dimension used multiple times within the same fact",
+            "c": "A dimension that changes rapidly over time"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 150,
+        "question": "What is a role-playing dimension?",
+        "answers": {
+            "a": "A dimension used multiple times within the same fact but with different meanings",
+            "b": "A dimension with alternate versions",
+            "c": "A dimension used in different facts with the same meaning and value"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 151,
+        "question": "Which data warehouse development approach is supported by Bill Inmon?",
+        "answers": {
+            "a": "Top-down development approach",
+            "b": "Bottom-up development approach",
+            "c": "Middle-out development approach"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 152,
+        "question": "What is a key characteristic of the top-down approach?",
+        "answers": {
+            "a": "Analyze global business needs, plan, design, and implement as a whole",
+            "b": "Incrementally build data marts",
+            "c": "Focus on a specific department's needs first"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 153,
+        "question": "What is a key disadvantage of the top-down approach?",
+        "answers": {
+            "a": "High exposure to risk of failure",
+            "b": "Faster implementation",
+            "c": "Low initial costs"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 154,
+        "question": "Which data warehouse development approach is supported by Ralph Kimball?",
+        "answers": {
+            "a": "Top-down development approach",
+            "b": "Bottom-up development approach",
+            "c": "Middle-out development approach"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 125,
+        "question": "ETL functions reshape the relevant data from the source systems into useful information.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 126,
+        "question": "If the source data is not extracted correctly, cleansed, and integrated, the backbone of the data warehouse, could not happen.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 127,
+        "question": "List of data extraction issues...",
+        "answers": {
+            "a": "Identify source applications and source structures.",
+            "b": "For each data source, define whether the extraction process is manual or tool-based",
+            "c": "Determine how to handle input records that cannot be extracted",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "6"
+    },
+    {
+        "id": 128,
+        "question": "Determine whether the beginning of one job in an extraction job stream has to wait until the previous job has finished successfully.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Method of extraction",
+            "c": "Job sequencing"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 129,
+        "question": "Determine how to handle input records that cannot be extracted.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Exception handling",
+            "c": "Job sequencing"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 130,
+        "question": "All the extracted data must be made unusable in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 131,
+        "question": "Data quality is not important in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 132,
+        "question": "Beginning of the whole process of data transformation. Select either whole records or parts of several records from the source systems.",
+        "answers": {
+            "a": "Selection",
+            "b": "Conversion",
+            "c": "Splitting"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 133,
+        "question": "You will be splitting the selected parts even further during data transformation.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 134,
+        "question": "It is important task to make the fields usable and understandable to the users.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting",
+            "c": "Joining"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 135,
+        "question": "Rearrangement and simplification of individual fields to make them more useful for the data warehouse environment.",
+        "answers": {
+            "a": "Splitting",
+            "b": "Enrichment",
+            "c": "Joining"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 136,
+        "question": "Major Transformation Types...",
+        "answers": {
+            "a": "Format Revisions",
+            "b": "Calculated and Derived Values.",
+            "c": "Splitting of Single Fields",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "6"
+    },
+    {
+        "id": 137,
+        "question": "Populating all the data warehouse tables for the very first time.",
+        "answers": {
+            "a": "Initial Load",
+            "b": "Incremental Load",
+            "c": "Full Refresh"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 138,
+        "question": "Incremental Load \u2014 applying ongoing changes as necessary in a periodic manner.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 139,
+        "question": "Completely erasing the contents of one or more tables and reloading with fresh data.",
+        "answers": {
+            "a": "Incremental Load",
+            "b": "Full Refresh"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 140,
+        "question": "The load process wipes out the existing data and applies the data from the incoming file.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 141,
+        "question": "Destructive Merge is an extension of the load.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 142,
+        "question": "Destructive Merge applies incoming data to the target data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 143,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, update the matching target record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Destructive Merge"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 144,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, leave the existing record, add the incoming record, and mark the added record as superseding the old record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Constructive Merge"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 145,
+        "question": "ETL Tools...",
+        "answers": {
+            "a": "NiFi",
+            "b": "Talend",
+            "c": "Both"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 146,
+        "question": "ROLAP servers store and manage warehouse data using RDBMS, and OLAP middleware fills in the gaps.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 147,
+        "question": "Advantages of ROLAP model...",
+        "answers": {
+            "a": "High data efficiency.",
+            "b": "Scalability.",
+            "c": "All"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 148,
+        "question": "Drawbacks of ROLAP model...",
+        "answers": {
+            "a": "Demand for higher resources.",
+            "b": "Aggregately data limitations.",
+            "c": "Slow query performance.",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "6"
+    },
+    {
+        "id": 149,
+        "question": "What is a mixture of both ROLAP and MOLAP?",
+        "answers": {
+            "a": "Hybrid OLAP",
+            "b": "ROLAP"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 150,
+        "question": "Drawbacks of Hybrid OLAP...",
+        "answers": {
+            "a": "Greater complexity level.",
+            "b": "Potential overlaps.",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 151,
+        "question": "The major drawback in HOLAP systems is that it supports both ROLAP and MOLAP tools and applications.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 152,
+        "question": "Adhoc analysis refers to the process of analyzing data in a flexible and exploratory manner.",
+        "answers": {
+            "a": "Adhoc analysis",
+            "b": "TV analysis"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 153,
+        "question": "Characteristics of Adhoc analysis...",
+        "answers": {
+            "a": "It's typically unplanned and focuses on immediate needs or questions.",
+            "b": "Ad hoc analyses are often one-time or infrequent tasks.",
+            "c": "A&B"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 154,
+        "question": "Ad hoc analysis is useful for quick insights, troubleshooting.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 155,
+        "question": "Interactive analysis involves a more structured and iterative approach to data exploration.",
+        "answers": {
+            "a": "Ad hoc analysis",
+            "b": "Interactive analysis"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 156,
+        "question": "Interactive analysis allows users to interact with data visualizations, dashboards, and reports in real-time.",
+        "answers": {
+            "a": "Ad hoc analysis",
+            "b": "Interactive analysis"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 157,
+        "question": "Characteristics of Interactive analysis...",
+        "answers": {
+            "a": "It often involves predefined dashboards or reports that users can interact with to drill down into details.",
+            "b": "Enables users to manipulate data visualizations, change parameters, and perform analysis on-the-fly.",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "6"
+    },
+    {
+        "id": 158,
+        "question": "Interactive analysis supports ongoing monitoring.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 159,
+        "question": "Interactive analysis is valuable for continuous monitoring and trend analysis.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 160,
+        "question": "Interactive analysis is more spontaneous and focused on immediate needs.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 161,
+        "question": "Ad hoc analysis is more structured, iterative, and conducive to ongoing data exploration.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 162,
+        "question": "Query performance is fastest in...",
+        "answers": {
+            "a": "MOLAP",
+            "b": "ROLAP",
+            "c": "HOLAP"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 163,
+        "question": "ROLAP needs to manage both relational DBMS and metadata layer.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 164,
+        "question": "OLAP focuses on information out.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 165,
+        "question": "OLTP is based on the entity relationship model.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 166,
+        "question": "OLTP is used to analyze the business.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 167,
+        "question": "Data volume in MOLAP is limited by physical cube.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 168,
+        "question": "Bottom-Up approach includes...",
+        "answers": {
+            "a": "Keeps the interest for the project constantly high",
+            "b": "May determine a partial vision of the business domain",
+            "c": "Enables designers to investigate one area at a time",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "6"
+    },
+    {
+        "id": 169,
+        "question": "Bottom-Up approach advantages include...",
+        "answers": {
+            "a": "Favorable return on investment and proof of concept",
+            "b": "Each data mart has its own narrow view of data",
+            "c": "Overall benefit to the business may be minimized"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 170,
+        "question": "Bottom-Up approach allows faster and easier implementation of manageable pieces.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 171,
+        "question": "Bottom-Up approach doesn\u2019t allow project team to learn and grow.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 172,
+        "question": "Bottom-Up approach disadvantages include...",
+        "answers": {
+            "a": "Each data mart has its own narrow view of data",
+            "b": "Overall benefit to the business may be minimized",
+            "c": "Permeates redundant data in every data mart",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "6"
+    },
+    {
+        "id": 173,
+        "question": "Bottom-Up approach has less risk of failure.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 174,
+        "question": "Inmon Architecture structure...",
+        "answers": {
+            "a": "Enterprise-wide (atomic) data warehouse 'feeds' departmental databases",
+            "b": "DMs model a single business process, and enterprise consistency"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 175,
+        "question": "Kimball Complexity of the method is...",
+        "answers": {
+            "a": "Quite complex",
+            "b": "Fairly simple"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 176,
+        "question": "Kimball Comparison with established development methodologies is...",
+        "answers": {
+            "a": "Four-step process; a departure from RDBMS methods",
+            "b": "Derived from the spiral methodology"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 177,
+        "question": "Inmon Data orientation is subject or data driven.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 178,
+        "question": "This architecture is a viable alternative to the independent DMs.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 179,
+        "question": "It allows for complex data queries across DMs.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 180,
+        "question": "This is perhaps the most famous data warehousing architecture today.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 181,
+        "question": "This architecture lacks the holistic enterprise view and may lead to data redundancy and data latency.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 182,
+        "question": "The centralized data warehouse architecture is similar to the hub-and-spoke architecture except that there are no dependent DMs.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 183,
+        "question": "This architecture provides users with access to all data in the data warehouse instead of limiting them to DMs.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Centralized data warehouse"
+        },
+        "correct": "b",
+        "lecture": "6"
+    },
+    {
+        "id": 184,
+        "question": "Centralized data warehouse reduces the amount of data the technical team has to transfer or change.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 185,
+        "question": "This architecture provides a timely and holistic view of the enterprise to whoever, whenever, and wherever they may be within the organization.",
+        "answers": {
+            "a": "Centralized data warehouse",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "a",
+        "lecture": "6"
+    },
+    {
+        "id": 186,
+        "question": "What is a conformed dimension?",
+        "answers": {
+            "a": "A dimension used in different facts with the same meaning and value",
+            "b": "A dimension used multiple times within the same fact",
+            "c": "A dimension with alternate versions"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 187,
+        "question": "A typical conformed dimension is the date. Its meaning varies by fact table.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 188,
+        "question": "A conformed dimension can refer to multiple tables in multiple data marts within the same organization.",
+        "answers": {
+            "a": "Degenerate Dimension",
+            "b": "Conformed Dimension",
+            "c": "Outrigger Dimension"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 189,
+        "question": "What is a dimension key without corresponding dimension table?",
+        "answers": {
+            "a": "Degenerate Dimension",
+            "b": "Conformed Dimension",
+            "c": "Outrigger Dimension"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 190,
+        "question": "A conformed dimension can be associated with different fact tables.",
+        "answers": {
+            "a": "Degenerate Dimension",
+            "b": "Conformed Dimension",
+            "c": "Outrigger Dimension"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 191,
+        "question": "Degenerate dimensions are typically derived from the source data and are often codes or numbers that uniquely identify a transaction or an event.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 192,
+        "question": "Degenerate dimensions have no attributes other than a key. They are often used in fact tables to store values that are not part of any other dimension.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 193,
+        "question": "Degenerate dimensions do not have a dimension table because all the interesting attributes have been placed in analytic dimensions.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 194,
+        "question": "Degenerate dimensions are used to provide a grouping for business cases.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 195,
+        "question": "Degenerate dimensions are a type of dimension that have attributes.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 196,
+        "question": "What is a junk dimension?",
+        "answers": {
+            "a": "A dimension that involves combining low-cardinality fields or attributes into a single dimension table",
+            "b": "A dimension used in different facts with the same meaning and value",
+            "c": "A dimension with multiple alternate versions"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 197,
+        "question": "These low-cardinality fields in a junk dimension may represent different categories or flags that have a limited number of possible values.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 198,
+        "question": "A junk dimension reduces the number of dimension tables in a data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 199,
+        "question": "A junk dimension reduces the number of columns in the fact table.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 200,
+        "question": "A junk dimension optimizes space as fact tables should not include low-cardinality or text fields.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 201,
+        "question": "Junk dimensions are also called cross-reference dimensions.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 202,
+        "question": "In a junk dimension, each combination of the low-cardinality attributes is assigned a unique identifier.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 203,
+        "question": "Assigning a unique identifier in a junk dimension allows the dimension table to represent all the possible combinations of the attributes in a compact and efficient manner.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 204,
+        "question": "The original attributes are replaced with references to the surrogate key in fact tables in a junk dimension, reducing the overall data storage requirements.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 205,
+        "question": "Junk dimension advantages include:",
+        "answers": {
+            "a": "Simplifies Data Transformations",
+            "b": "Reduces Data Storage",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 206,
+        "question": "By consolidating multiple low-cardinality attributes into a single dimension table, a junk dimension simplifies the data transformation process in ETL pipelines.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 207,
+        "question": "A conformed dimension can improve query performance by reducing the number of table joins required for querying data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 208,
+        "question": "Putting attributes into an existing dimension is a better alternative than using a junk dimension.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 209,
+        "question": "Leaving attributes in the fact table instead of using a junk dimension results in a cluttered table with large row sizes and affects speed.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 210,
+        "question": "Making attributes into separate dimensions instead of using a junk dimension results in an overly complex model with too many tables, affecting speed and maintenance.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 211,
+        "question": "A 'customer type' flag with values like 'new,' 'returning,' or 'loyal' can be consolidated into a junk dimension.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 212,
+        "question": "Creating a junk dimension replaces hard-coded options in applications, making it easier to maintain and change these codes.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 213,
+        "question": "A role-played dimension refers to a technique where a single dimension table is used in multiple ways within the same fact table.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 214,
+        "question": "Role-playing dimensions help you analyze data from different perspectives without duplicating data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 215,
+        "question": "An outrigger dimension is a secondary dimension table that is related to a primary dimension table in a star schema or snowflake schema.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 125,
+        "question": "ETL functions reshape the relevant data from the source systems into useful information.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 126,
+        "question": "If the source data is not extracted correctly, cleansed, and integrated, the backbone of the data warehouse, could not happen.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 127,
+        "question": "List of data extraction issues...",
+        "answers": {
+            "a": "Identify source applications and source structures.",
+            "b": "For each data source, define whether the extraction process is manual or tool-based",
+            "c": "Determine how to handle input records that cannot be extracted",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "5"
+    },
+    {
+        "id": 128,
+        "question": "Determine whether the beginning of one job in an extraction job stream has to wait until the previous job has finished successfully.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Method of extraction",
+            "c": "Job sequencing"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 129,
+        "question": "Determine how to handle input records that cannot be extracted.",
+        "answers": {
+            "a": "Source Identification",
+            "b": "Exception handling",
+            "c": "Job sequencing"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 130,
+        "question": "All the extracted data must be made unusable in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 131,
+        "question": "Data quality is not important in the data warehouse.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 132,
+        "question": "Beginning of the whole process of data transformation. Select either whole records or parts of several records from the source systems.",
+        "answers": {
+            "a": "Selection",
+            "b": "Conversion",
+            "c": "Splitting"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 133,
+        "question": "You will be splitting the selected parts even further during data transformation.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 134,
+        "question": "It is important task to make the fields usable and understandable to the users.",
+        "answers": {
+            "a": "Conversion",
+            "b": "Splitting",
+            "c": "Joining"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 135,
+        "question": "Rearrangement and simplification of individual fields to make them more useful for the data warehouse environment.",
+        "answers": {
+            "a": "Splitting",
+            "b": "Enrichment",
+            "c": "Joining"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 136,
+        "question": "Major Transformation Types...",
+        "answers": {
+            "a": "Format Revisions",
+            "b": "Calculated and Derived Values.",
+            "c": "Splitting of Single Fields",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "5"
+    },
+    {
+        "id": 137,
+        "question": "Populating all the data warehouse tables for the very first time.",
+        "answers": {
+            "a": "Initial Load",
+            "b": "Incremental Load",
+            "c": "Full Refresh"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 138,
+        "question": "Incremental Load \u2014 applying ongoing changes as necessary in a periodic manner.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 139,
+        "question": "Completely erasing the contents of one or more tables and reloading with fresh data.",
+        "answers": {
+            "a": "Incremental Load",
+            "b": "Full Refresh"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 140,
+        "question": "The load process wipes out the existing data and applies the data from the incoming file.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 141,
+        "question": "Destructive Merge is an extension of the load.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 142,
+        "question": "Destructive Merge applies incoming data to the target data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 143,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, update the matching target record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Destructive Merge"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 144,
+        "question": "If the primary key of an incoming record matches with the key of an existing record, leave the existing record, add the incoming record, and mark the added record as superseding the old record.",
+        "answers": {
+            "a": "Load",
+            "b": "Append",
+            "c": "Constructive Merge"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 145,
+        "question": "ETL Tools...",
+        "answers": {
+            "a": "NiFi",
+            "b": "Talend",
+            "c": "Both"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 146,
+        "question": "ROLAP servers store and manage warehouse data using RDBMS, and OLAP middleware fills in the gaps.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 147,
+        "question": "Advantages of ROLAP model...",
+        "answers": {
+            "a": "High data efficiency.",
+            "b": "Scalability.",
+            "c": "All"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 148,
+        "question": "Drawbacks of ROLAP model...",
+        "answers": {
+            "a": "Demand for higher resources.",
+            "b": "Aggregately data limitations.",
+            "c": "Slow query performance.",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "5"
+    },
+    {
+        "id": 149,
+        "question": "What is a mixture of both ROLAP and MOLAP?",
+        "answers": {
+            "a": "Hybrid OLAP",
+            "b": "ROLAP"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 150,
+        "question": "Drawbacks of Hybrid OLAP...",
+        "answers": {
+            "a": "Greater complexity level.",
+            "b": "Potential overlaps.",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 151,
+        "question": "The major drawback in HOLAP systems is that it supports both ROLAP and MOLAP tools and applications.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 152,
+        "question": "Adhoc analysis refers to the process of analyzing data in a flexible and exploratory manner.",
+        "answers": {
+            "a": "Adhoc analysis",
+            "b": "TV analysis"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 153,
+        "question": "Characteristics of Adhoc analysis...",
+        "answers": {
+            "a": "It's typically unplanned and focuses on immediate needs or questions.",
+            "b": "Ad hoc analyses are often one-time or infrequent tasks.",
+            "c": "A&B"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 154,
+        "question": "Ad hoc analysis is useful for quick insights, troubleshooting.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 155,
+        "question": "Interactive analysis involves a more structured and iterative approach to data exploration.",
+        "answers": {
+            "a": "Ad hoc analysis",
+            "b": "Interactive analysis"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 156,
+        "question": "Interactive analysis allows users to interact with data visualizations, dashboards, and reports in real-time.",
+        "answers": {
+            "a": "Ad hoc analysis",
+            "b": "Interactive analysis"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 157,
+        "question": "Characteristics of Interactive analysis...",
+        "answers": {
+            "a": "It often involves predefined dashboards or reports that users can interact with to drill down into details.",
+            "b": "Enables users to manipulate data visualizations, change parameters, and perform analysis on-the-fly.",
+            "c": "All the above"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 158,
+        "question": "Interactive analysis supports ongoing monitoring.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 159,
+        "question": "Interactive analysis is valuable for continuous monitoring and trend analysis.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 160,
+        "question": "Interactive analysis is more spontaneous and focused on immediate needs.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 161,
+        "question": "Ad hoc analysis is more structured, iterative, and conducive to ongoing data exploration.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 162,
+        "question": "Query performance is fastest in...",
+        "answers": {
+            "a": "MOLAP",
+            "b": "ROLAP",
+            "c": "HOLAP"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 163,
+        "question": "ROLAP needs to manage both relational DBMS and metadata layer.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 164,
+        "question": "OLAP focuses on information out.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 165,
+        "question": "OLTP is based on the entity relationship model.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 166,
+        "question": "OLTP is used to analyze the business.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 167,
+        "question": "Data volume in MOLAP is limited by physical cube.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 168,
+        "question": "Bottom-Up approach includes...",
+        "answers": {
+            "a": "Keeps the interest for the project constantly high",
+            "b": "May determine a partial vision of the business domain",
+            "c": "Enables designers to investigate one area at a time",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "5"
+    },
+    {
+        "id": 169,
+        "question": "Bottom-Up approach advantages include...",
+        "answers": {
+            "a": "Favorable return on investment and proof of concept",
+            "b": "Each data mart has its own narrow view of data",
+            "c": "Overall benefit to the business may be minimized"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 170,
+        "question": "Bottom-Up approach allows faster and easier implementation of manageable pieces.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 171,
+        "question": "Bottom-Up approach doesn\u2019t allow project team to learn and grow.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 172,
+        "question": "Bottom-Up approach disadvantages include...",
+        "answers": {
+            "a": "Each data mart has its own narrow view of data",
+            "b": "Overall benefit to the business may be minimized",
+            "c": "Permeates redundant data in every data mart",
+            "d": "All the above"
+        },
+        "correct": "d",
+        "lecture": "5"
+    },
+    {
+        "id": 173,
+        "question": "Bottom-Up approach has less risk of failure.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 174,
+        "question": "Inmon Architecture structure...",
+        "answers": {
+            "a": "Enterprise-wide (atomic) data warehouse 'feeds' departmental databases",
+            "b": "DMs model a single business process, and enterprise consistency"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 175,
+        "question": "Kimball Complexity of the method is...",
+        "answers": {
+            "a": "Quite complex",
+            "b": "Fairly simple"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 176,
+        "question": "Kimball Comparison with established development methodologies is...",
+        "answers": {
+            "a": "Four-step process; a departure from RDBMS methods",
+            "b": "Derived from the spiral methodology"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 177,
+        "question": "Inmon Data orientation is subject or data driven.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 178,
+        "question": "This architecture is a viable alternative to the independent DMs.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 179,
+        "question": "It allows for complex data queries across DMs.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 180,
+        "question": "This is perhaps the most famous data warehousing architecture today.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 181,
+        "question": "This architecture lacks the holistic enterprise view and may lead to data redundancy and data latency.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 182,
+        "question": "The centralized data warehouse architecture is similar to the hub-and-spoke architecture except that there are no dependent DMs.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 183,
+        "question": "This architecture provides users with access to all data in the data warehouse instead of limiting them to DMs.",
+        "answers": {
+            "a": "Data mart bus architecture",
+            "b": "Centralized data warehouse"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 184,
+        "question": "Centralized data warehouse reduces the amount of data the technical team has to transfer or change.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 185,
+        "question": "This architecture provides a timely and holistic view of the enterprise to whoever, whenever, and wherever they may be within the organization.",
+        "answers": {
+            "a": "Centralized data warehouse",
+            "b": "Hub-and-spoke architecture"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 221,
+        "question": "Outrigger dimension is used in a star schema or snowflake schema.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 222,
+        "question": "In Outrigger Dimension example, to analyze sales of specific product variations or products with detailed specifications, we would join the fact table with the relevant outrigger dimensions based on the product_key.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 223,
+        "question": "From the Outrigger Dimension example, answer the following: Products dimension is not the primary dimension representing all products in the catalog.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 224,
+        "question": "This outrigger dimension captures attributes specific to product variations (e.g., different colors and sizes).",
+        "answers": {
+            "a": "Product Variations",
+            "b": "Product Specification"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 225,
+        "question": "The fact table captures sales transactions, referencing both the base 'Products' dimension and the outrigger dimensions as needed.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 226,
+        "question": "If we want to analyze sales of a particular laptop model with a 15\" screen and an Intel i5 processor, you would join the 'Sales' fact table with the 'Products' dimension and the 'Product Specifications' outrigger dimension using the product_key.",
+        "answers": {
+            "a": "Products and Product Specifications",
+            "b": "Products and Product Variations",
+            "c": "Both"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 227,
+        "question": "We use outrigger dimension for\u2026",
+        "answers": {
+            "a": "Detail Separation",
+            "b": "Scalability",
+            "c": "Flexibility",
+            "d": "Maintainability",
+            "e": "All the above"
+        },
+        "correct": "e",
+        "lecture": "5"
+    },
+    {
+        "id": 228,
+        "question": "\u2026allow you to separate detailed information from the primary dimension table.",
+        "answers": {
+            "a": "Conformed dimension",
+            "b": "Outrigger dimensions",
+            "c": "None"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 229,
+        "question": "Separating detailed information from the primary dimension table helps keep the primary dimension focused on essential attributes.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 230,
+        "question": "Adding new attributes directly to the primary dimension can lead to a wide, complex table.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 231,
+        "question": "Outrigger dimensions provide a modular way to add additional attributes without affecting the core structure.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 232,
+        "question": "\u2026offer flexibility in adapting to changing business requirements.",
+        "answers": {
+            "a": "Conformed dimension",
+            "b": "Outrigger dimensions",
+            "c": "None"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 233,
+        "question": "By separating less frequently used attributes into an outrigger dimension, queries that do not require these details can avoid unnecessary joins, leading to improved query performance.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 234,
+        "question": "Changes to detailed attributes can be localized to the outrigger dimension, reducing the impact on the primary dimension.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 235,
+        "question": "\u2026is a dimension that has a hierarchy of attributes.",
+        "answers": {
+            "a": "Snowflake Dimension",
+            "b": "Star schema",
+            "c": "None"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 236,
+        "question": "\u2026Dimensions have attributes that change over time.",
+        "answers": {
+            "a": "Conformed dimension",
+            "b": "Degenerate dimension",
+            "c": "Slowly changing Dimension"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 237,
+        "question": "Attributes that change over time. Products change price, cost, and composition. Employees are promoted, fired, this is a \u2026.",
+        "answers": {
+            "a": "Conformed dimension",
+            "b": "Degenerate dimension",
+            "c": "Slowly changing Dimension"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 238,
+        "question": "Operational applications do not track changes to dimensional values because transactions only need the most current values.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 239,
+        "question": "Which Slowly changing Dimension type keeps original data?",
+        "answers": {
+            "a": "SCD type 0",
+            "b": "SCD type 1",
+            "c": "SCD type 2"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 240,
+        "question": "Which Slowly changing Dimension type overwrites existing data (row) with new data?",
+        "answers": {
+            "a": "SCD type 0",
+            "b": "SCD type 1",
+            "c": "SCD type 2"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 241,
+        "question": "Which Slowly changing Dimension type creates a new row for new values?",
+        "answers": {
+            "a": "SCD type 0",
+            "b": "SCD type 1",
+            "c": "SCD type 2"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 242,
+        "question": "Which Slowly changing Dimension type tracks changes using separate columns but overwrites the rest?",
+        "answers": {
+            "a": "SCD type 0",
+            "b": "SCD type 1",
+            "c": "SCD type 3",
+            "d": "SCD type 4"
+        },
+        "correct": "c",
+        "lecture": "5"
+    },
+    {
+        "id": 243,
+        "question": "Which Slowly changing Dimension type adds a mini-dimension?",
+        "answers": {
+            "a": "SCD type 0",
+            "b": "SCD type 1",
+            "c": "SCD type 3",
+            "d": "SCD type 4"
+        },
+        "correct": "d",
+        "lecture": "5"
+    },
+    {
+        "id": 244,
+        "question": "The technique that writes the original dimension record but then never updates it is\u2026",
+        "answers": {
+            "a": "SCD type 0",
+            "b": "SCD type 1",
+            "c": "SCD type 2"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 245,
+        "question": "SCD type 0 is the least likely technique to be used.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 246,
+        "question": "In SCD type 1 we do not lose the ability to track the history of the attributes.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "b",
+        "lecture": "5"
+    },
+    {
+        "id": 247,
+        "question": "SCD type 2 enables you to track history accurately.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 248,
+        "question": "SCD type 2 is relatively straightforward to implement.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 249,
+        "question": "In SCD type 4 we split the data into two tables, one for the current record and one for the historical data.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 250,
+        "question": "When we have a dimension with one or more of its attributes changing very fast, this is called a Fast Changing Dimension.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correct": "a",
+        "lecture": "5"
+    },
+    {
+        "id": 251,
+        "question": "Separation of the attributes into one or more dimensions is also called\u2026",
+        "answers": {
+            "a": "Fast Changing Dimension",
+            "b": "Mini-dimensions",
+            "c": "Both"
+        },
+        "correct": "b",
+        "lecture": "5"
+    }
+
+]
