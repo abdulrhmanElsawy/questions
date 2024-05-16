@@ -2193,7 +2193,7 @@ const questionsData = [
     },
     {
         "id": 224,
-        "question": "This outrigger dimension captures attributes specific to product variations (e.g., different colors and sizes).",
+        "question": "This outrigger dimension captures attributes specific to product variations (e,g,, different colors and sizes).",
         "answers": {
             "a": "Product Variations",
             "b": "Product Specification"
@@ -4959,7 +4959,7 @@ const lectureSummaries = {
     Time-Variant:
     
     Maintains historical data to detect trends and support forecasting.
-    Supports multiple time points (e.g., daily, monthly views).
+    Supports multiple time points (e,g,, daily, monthly views).
     Nonvolatile:
     
     Once data is entered, it cannot be changed or updated.
@@ -5023,13 +5023,13 @@ const lectureSummaries = {
     Key Concepts in Dimensional Modeling
     Facts:
     
-    Measurements of business activities, usually numeric (e.g., sales, expenses, inventory levels).
+    Measurements of business activities, usually numeric (e,g,, sales, expenses, inventory levels).
     Stored in fact tables, which contain the core numeric data.
     Two types of columns: keys (foreign keys to dimension tables) and measures (actual business activity metrics).
     Facts can be additive, semi-additive, non-additive, derived, or textual.
     Dimensions:
     
-    Entities that establish the business context for facts (e.g., product, geography, customer, time).
+    Entities that establish the business context for facts (e,g,, product, geography, customer, time).
     Group similar attributes into categories or subject areas.
     Provide descriptive context for the facts.
     Schema Types
@@ -5076,32 +5076,32 @@ const lectureSummaries = {
     
     Gathering Requirements: Determine what the business or users need.
     Identify Granularity: Define the level of detail for the facts (data to be analyzed).
-    Identify Dimensions: Determine the categories for analysis (e.g., time, product).
-    Identify Facts: Specify the measurements or metrics (e.g., sales amount).
+    Identify Dimensions: Determine the categories for analysis (e,g,, time, product).
+    Identify Facts: Specify the measurements or metrics (e,g,, sales amount).
     Fact Granularity
     Granularity, or grain, defines what a single row in the fact table represents. It describes the physical event to be measured and controls the available dimensions. The granularity can vary:
     
     Transaction-Level Grain: Most detailed, with one row per transaction.
-    Periodic Grain: Less detailed, summarizing data over a time period (e.g., monthly balances).
-    Accumulating Grain: Tracks the progress of an event over time (e.g., order processing stages).
+    Periodic Grain: Less detailed, summarizing data over a time period (e,g,, monthly balances).
+    Accumulating Grain: Tracks the progress of an event over time (e,g,, order processing stages).
     Types of Fact Tables
-    Transaction Fact Tables: Record individual business events (e.g., sales transactions).
+    Transaction Fact Tables: Record individual business events (e,g,, sales transactions).
     Characteristics: One row per transaction, grows quickly with more transactions.
-    Periodic Fact Tables: Capture data snapshots at specific times (e.g., monthly inventory levels).
+    Periodic Fact Tables: Capture data snapshots at specific times (e,g,, monthly inventory levels).
     Characteristics: One row for a group of transactions over a period.
-    Accumulating Fact Tables: Store records for the entire event lifecycle, updated as the process progresses (e.g., order lifecycle).
+    Accumulating Fact Tables: Store records for the entire event lifecycle, updated as the process progresses (e,g,, order lifecycle).
     Characteristics: One row for the entire process, updated with each milestone.
     Types of Measures
-    Additive Facts: Can be summed across all dimensions (e.g., sales quantity).
-    Semi-Additive Facts: Can be summed across some dimensions but not all (e.g., account balance).
-    Non-Additive Facts: Cannot be summed across any dimensions (e.g., profit margin).
-    Derived Facts: Calculated from other facts (e.g., total sales = quantity sold * unit price).
-    Textual Facts: Non-numeric data (e.g., process completion flags).
+    Additive Facts: Can be summed across all dimensions (e,g,, sales quantity).
+    Semi-Additive Facts: Can be summed across some dimensions but not all (e,g,, account balance).
+    Non-Additive Facts: Cannot be summed across any dimensions (e,g,, profit margin).
+    Derived Facts: Calculated from other facts (e,g,, total sales = quantity sold * unit price).
+    Textual Facts: Non-numeric data (e,g,, process completion flags).
     Types of Dimensions
-    Conformed Dimension: Used consistently across different fact tables (e.g., date).
-    Degenerate Dimension: Dimension key without a corresponding dimension table, stored in the fact table (e.g., order ID).
-    Junk Dimension: Combines low-cardinality attributes (e.g., flags, indicators).
-    Role-Playing Dimension: Same dimension used multiple times in a fact table (e.g., date used for order date, ship date).
+    Conformed Dimension: Used consistently across different fact tables (e,g,, date).
+    Degenerate Dimension: Dimension key without a corresponding dimension table, stored in the fact table (e,g,, order ID).
+    Junk Dimension: Combines low-cardinality attributes (e,g,, flags, indicators).
+    Role-Playing Dimension: Same dimension used multiple times in a fact table (e,g,, date used for order date, ship date).
     Outrigger Dimension: Linked to another dimension rather than directly to the fact table.
     Snowflake Dimension: More normalized form of a dimension table.
     Shrunken Rollup Dimension: Subset of another dimension.
@@ -5214,7 +5214,7 @@ const lectureSummaries = {
     Multi-Valued Dimensions
     For instance, in a family insurance company, you might have a policy holder, Mr. John, his wife Lisa, and their son Dave, all under the same policy number. This is an example of a multi-valued dimension because multiple family members are associated with one policy.
     
-    To handle such cases, we use a bridge table. This table links the policy number to each family member without violating the table's grain, which is the level of detail stored in the table. Additionally, we use a weighting factor in the bridge table to allocate the total value (e.g., monthly premium) across the family members.
+    To handle such cases, we use a bridge table. This table links the policy number to each family member without violating the table's grain, which is the level of detail stored in the table. Additionally, we use a weighting factor in the bridge table to allocate the total value (e,g,, monthly premium) across the family members.
     
     Handling Multi-Valued Dimensions
     There are different approaches:
@@ -5362,6 +5362,12 @@ const lectureSummaries = {
     By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your OLAP test.`
 };
 
+const formatSummary = (summary) => {
+    return summary.split(/(?<=[.;!?])/).map((sentence, index) => (
+        <p key={index}>{sentence.trim()}</p>
+    ));
+};
+
 function Landing() {
     const [selectedLecture, setSelectedLecture] = useState(7);
     const [filteredQuestions, setFilteredQuestions] = useState([]);
@@ -5428,7 +5434,10 @@ function Landing() {
                         </div>
                         <div className='col-12'>
                             <div className='lecture-summary'>
-                                <h2 className={`lec-${selectedLecture}`}>{lectureSummaries[selectedLecture]}</h2>
+                                <h2 className={`lec-${selectedLecture}`}>                                
+                                {formatSummary(lectureSummaries[selectedLecture])}
+
+</h2>
                             </div>
                             <div className='question-content'>
                                 {filteredQuestions.map(question => (
