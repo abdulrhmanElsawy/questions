@@ -1,3 +1,27 @@
+.lecture-summary {
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    padding: 18px;
+    min-height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 39px;
+    position: relative;
+}
+
+.lecture-summary h2 {
+    direction: ltr;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+
+
 
 .made-by{
     display: flex;

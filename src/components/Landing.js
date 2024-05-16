@@ -4866,22 +4866,517 @@ const questionsData = [
 ];
 
 
+
+const lectureSummaries = {
+    1: `Transaction Processing vs. Analytic Processing:
+
+    Transaction Processing (OLTP): Handles daily business transactions like ATM withdrawals or grocery store purchases. Focuses on capturing and storing data.
+    Analytic Processing (OLAP): Designed for ad hoc analysis and complex queries. Uses data stored in data warehouses for decision support.
+    Normalization vs. Denormalization:
+    
+    Normalization: Organizes data to reduce redundancy and improve data integrity. Used in OLTP systems.
+    Denormalization: Combines data to make retrieval faster, introducing redundancy. Used in OLAP systems.
+    Data Warehouse (DW):
+    
+    A central repository for current and historical data, supporting decision-making and analytical processing activities.
+    Data Warehouse Characteristics
+    Subject-Oriented: Data organized by subjects like sales or customers for decision support.
+    Integrated: Combines data from different sources into a consistent format.
+    Time-Variant: Maintains historical data to detect trends and support forecasting.
+    Nonvolatile: Data cannot be changed once entered, maintaining a historical record.
+    Data Lakes vs. Data Warehouses
+    Data Storage:
+    
+    Data Warehouse: Stores structured data.
+    Data Lake: Stores all kinds of data (structured, semi-structured, unstructured) in its raw format.
+    Processing Approach:
+    
+    Data Warehouse: Data is structured before loading (schema-on-write).
+    Data Lake: Data is structured when used (schema-on-read).
+    Retrieval Speed:
+    
+    Data Warehouse: Optimized for fast data retrieval using techniques like triggers and columnar data representation.
+    Data Lake: Retrieval can be slower due to the unstructured nature of the data.
+    Storage Cost:
+    
+    Data Warehouse: Generally higher due to structured data storage.
+    Data Lake: Lower cost, often using open-source software like Hadoop on low-cost hardware.
+    Agility:
+    
+    Data Warehouse: Highly structured, changes can be time-consuming.
+    Data Lake: Flexible, allowing easy configuration and reconfiguration.
+    Novelty:
+    
+    Data Warehouse: Established technology with little new innovation.
+    Data Lake: New and evolving, with ongoing innovations.
+    Security:
+    
+    Data Warehouse: Mature and well-developed security.
+    Data Lake: Security is improving, but still catching up.
+    Key Terms
+    ETL (Extract, Transform, Load): Process of extracting data from source systems, transforming it to fit operational needs, and loading it into a data warehouse.
+    ELT (Extract, Load, Transform): Similar to ETL but data is transformed after being loaded into the data warehouse.
+    Big Data: Large volumes of data, often unstructured, which can be analyzed for insights.
+    Data Lakes: Large storage locations for holding vast quantities of raw data for future analysis.
+    By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your data warehousing course.`,
+    2: `Introduction to Data Warehousing
+    Data warehousing involves collecting and managing data from different sources to provide business insights. It includes a variety of technologies and components to support decision-making.
+    
+    Transaction Processing vs. Analytic Processing
+    Transaction Processing (OLTP):
+    
+    Handles routine, day-to-day business transactions.
+    Examples: ATM withdrawals, bank deposits, grocery store purchases.
+    Focuses on capturing and storing data related to business functions.
+    Analytic Processing (OLAP):
+    
+    Designed for ad hoc analysis and complex queries.
+    Uses data stored in data warehouses.
+    Supports decision-making by analyzing large amounts of data.
+    Normalization vs. Denormalization
+    Normalization:
+    
+    Organizes data to reduce redundancy and improve data integrity.
+    Divides data into multiple tables and sets up relationships.
+    Used in OLTP systems to make insert, delete, and update operations faster.
+    Denormalization:
+    
+    Combines data into fewer tables to make data retrieval faster.
+    Introduces redundancy to improve performance.
+    Used in OLAP systems to speed up search and analysis.
+    Data Warehouse (DW)
+    A data warehouse is a repository of current and historical data that supports decision-making. It is structured to be ready for analytical processing activities such as OLAP, data mining, querying, and reporting.
+    
+    Data Warehouse Characteristics
+    Subject-Oriented:
+    
+    Data is organized by subject, like sales or customers, to support decision-making.
+    Provides a comprehensive view of the organization.
+    Integrated:
+    
+    Combines data from different sources into a consistent format.
+    Deals with naming conflicts and discrepancies among units of measure.
+    Time-Variant:
+    
+    Maintains historical data to detect trends and support forecasting.
+    Supports multiple time points (e.g., daily, monthly views).
+    Nonvolatile:
+    
+    Once data is entered, it cannot be changed or updated.
+    Changes are recorded as new data, maintaining a historical record.
+    Additional Characteristics
+    Web-Based: Designed for web applications.
+    Relational/Multidimensional: Uses either relational or multidimensional structures.
+    Client/Server: Uses client/server architecture for easy user access.
+    Real-Time: Provides real-time data access and analysis capabilities.
+    Metadata: Contains data about data to help organize and use it effectively.
+    Metadata
+    Metadata describes the structure and meaning of data, contributing to its effective use. It includes technical and business metadata and can be categorized as syntactic, structural, or semantic.
+    
+    Data Warehouse Process
+    Data Sources:
+    
+    Data comes from multiple operational systems and external providers.
+    Can include web data from logs.
+    Data Extraction and Transformation:
+    
+    Data is extracted and transformed using ETL (Extract, Transform, Load) processes.
+    Data Loading:
+    
+    Data is loaded into a staging area, transformed, cleansed, and then loaded into the data warehouse or data marts (DMs).
+    Comprehensive Database:
+    
+    An enterprise data warehouse (EDW) supports decision analysis with summarized and detailed information from different sources.
+    Metadata:
+    
+    Maintained for IT personnel and users, includes programs and rules for organizing data.
+    Middleware Tools:
+    
+    Enable access to the data warehouse.
+    Includes tools for querying, data mining, OLAP, reporting, and data visualization.
+    Business Benefits of Data Warehouses
+    Data warehouses provide significant business benefits by enabling better decision-making, improving data analysis capabilities, and supporting various decision support systems (DSS).`,
+    3: `Data Warehousing Overview
+    Data warehousing is a technique for collecting and managing data from various sources to provide meaningful business insights. It involves a blend of technologies and components to aid in strategic data use. While a data warehouse is a repository of data, data warehousing refers to the entire process.
+    
+    Main Types of Data Warehouses
+    Data Marts (DMs):
+    
+    A smaller, focused subset of a data warehouse.
+    Typically concentrates on a single subject area, like marketing or operations.
+    Dependent Data Mart: Created from the data warehouse, ensuring consistent data quality.
+    Independent Data Mart: A small warehouse for a specific business unit or department, not sourced from an EDW (Enterprise Data Warehouse).
+    Operational Data Stores (ODS):
+    
+    Provides a recent form of customer information, updated throughout business operations.
+    Used for short-term decisions involving mission-critical applications.
+    Acts like short-term memory, storing recent information.
+    Consolidates data from multiple sources for near-real-time, integrated views.
+    Enterprise Data Warehouses (EDW):
+    
+    Large-scale data warehouses used across the enterprise for decision support.
+    Integrates data from many sources into a standard format.
+    Supports various decision support systems (DSS), including CRM, SCM, BPM, and more.
+    Dimensional Modeling
+    Dimensional modeling is a logical design technique, ideal for business intelligence (BI) applications and data warehousing (DW). It helps in organizing data to enable BI reporting, querying, and analysis.
+    
+    Key Concepts in Dimensional Modeling
+    Facts:
+    
+    Measurements of business activities, usually numeric (e.g., sales, expenses, inventory levels).
+    Stored in fact tables, which contain the core numeric data.
+    Two types of columns: keys (foreign keys to dimension tables) and measures (actual business activity metrics).
+    Facts can be additive, semi-additive, non-additive, derived, or textual.
+    Dimensions:
+    
+    Entities that establish the business context for facts (e.g., product, geography, customer, time).
+    Group similar attributes into categories or subject areas.
+    Provide descriptive context for the facts.
+    Schema Types
+    Star Schema:
+    
+    Simplest and most common type of dimensional modeling schema.
+    Contains a central fact table surrounded by dimension tables.
+    Dimension tables have a one-to-many relationship with the fact table.
+    Advantages: simplicity, query effectiveness, and wide support.
+    Disadvantages: data redundancy and large table size.
+    Snowflake Schema:
+    
+    Extension of the star schema with normalized dimension tables.
+    Each level in the dimension hierarchy becomes its own table.
+    Advantages: disk space efficiency due to normalization.
+    Disadvantages: more complicated and requires more joins for queries.
+    Multi-Fact Star Models:
+    
+    Realistic representation of enterprise data, involving multiple fact tables.
+    Shared dimensions between fact tables are known as conformed dimensions.
+    Comparison: Entity Relationship (ER) vs. Dimensional Modeling
+    ER Modeling:
+    
+    Standard for transactional systems (OLTP).
+    Focus on minimal redundancy to support high transaction throughput.
+    Dimensional Modeling:
+    
+    Best for BI and OLAP systems.
+    Focus on query performance and aggregation of large data sets.
+    Utilizes indexes and partitioning for efficient storage and reporting.
+    Key Terms
+    Data Warehouse (DW): Central repository of integrated data from various sources.
+    Data Mart (DM): Subset of a data warehouse, focusing on specific business areas.
+    Operational Data Store (ODS): Short-term data store for current business operations.
+    Enterprise Data Warehouse (EDW): Large-scale data warehouse for enterprise-wide decision support.
+    Fact Table: Central table in a schema storing quantitative data.
+    Dimension Table: Table storing descriptive attributes related to facts.
+    Star Schema: Simple schema with a central fact table and surrounding dimension tables.
+    Snowflake Schema: More normalized schema with hierarchical dimension tables.
+    Conformed Dimension: Dimension used consistently across multiple fact tables.
+    By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your data warehousing test.`,
+    4: `Dimensional Modeling Overview
+    Dimensional modeling is a design concept used in data warehousing. It helps to structure data in a way that is intuitive for users and efficient for queries. Here are the main elements and steps in the dimensional model life cycle:
+    
+    Gathering Requirements: Determine what the business or users need.
+    Identify Granularity: Define the level of detail for the facts (data to be analyzed).
+    Identify Dimensions: Determine the categories for analysis (e.g., time, product).
+    Identify Facts: Specify the measurements or metrics (e.g., sales amount).
+    Fact Granularity
+    Granularity, or grain, defines what a single row in the fact table represents. It describes the physical event to be measured and controls the available dimensions. The granularity can vary:
+    
+    Transaction-Level Grain: Most detailed, with one row per transaction.
+    Periodic Grain: Less detailed, summarizing data over a time period (e.g., monthly balances).
+    Accumulating Grain: Tracks the progress of an event over time (e.g., order processing stages).
+    Types of Fact Tables
+    Transaction Fact Tables: Record individual business events (e.g., sales transactions).
+    Characteristics: One row per transaction, grows quickly with more transactions.
+    Periodic Fact Tables: Capture data snapshots at specific times (e.g., monthly inventory levels).
+    Characteristics: One row for a group of transactions over a period.
+    Accumulating Fact Tables: Store records for the entire event lifecycle, updated as the process progresses (e.g., order lifecycle).
+    Characteristics: One row for the entire process, updated with each milestone.
+    Types of Measures
+    Additive Facts: Can be summed across all dimensions (e.g., sales quantity).
+    Semi-Additive Facts: Can be summed across some dimensions but not all (e.g., account balance).
+    Non-Additive Facts: Cannot be summed across any dimensions (e.g., profit margin).
+    Derived Facts: Calculated from other facts (e.g., total sales = quantity sold * unit price).
+    Textual Facts: Non-numeric data (e.g., process completion flags).
+    Types of Dimensions
+    Conformed Dimension: Used consistently across different fact tables (e.g., date).
+    Degenerate Dimension: Dimension key without a corresponding dimension table, stored in the fact table (e.g., order ID).
+    Junk Dimension: Combines low-cardinality attributes (e.g., flags, indicators).
+    Role-Playing Dimension: Same dimension used multiple times in a fact table (e.g., date used for order date, ship date).
+    Outrigger Dimension: Linked to another dimension rather than directly to the fact table.
+    Snowflake Dimension: More normalized form of a dimension table.
+    Shrunken Rollup Dimension: Subset of another dimension.
+    Swappable Dimension: Multiple versions of a dimension that can be swapped based on query requirements.
+    Slowly Changing Dimension: Captures changes over time.
+    Fast Changing Dimension (Mini Dimension): Handles rapidly changing attributes.
+    Heterogeneous Dimensions: Varied types and structures.
+    Multi-Valued Dimensions: Single fact related to multiple values.
+    Examples of Fact Types
+    Transaction Fact Example: Sales transactions recorded with details like product ID, quantity, and amount.
+    Periodic Fact Example: Monthly account balances with columns for total incoming and outgoing amounts.
+    Accumulating Fact Example: Order processing stages recorded with dates and milestone flags.
+    Key Terms
+    Fact Table: Central table in a star schema that stores quantitative data for analysis.
+    Dimension Table: Stores attributes related to the facts, used to categorize and describe data.
+    Granularity: The level of detail stored in a table.
+    Conformed Dimension: Dimension used consistently across multiple fact tables.
+    Degenerate Dimension: Dimension key stored in the fact table without a separate dimension table.
+    Additive Fact: Measure that can be summed across all dimensions.
+    Semi-Additive Fact: Measure that can be summed across some dimensions.
+    Non-Additive Fact: Measure that cannot be summed across any dimensions.
+    Derived Fact: Measure calculated from other facts.
+    Textual Fact: Non-numeric measure.
+    By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your dimensional modeling test.
+    
+    `,
+    5: `Dimensional Modeling II:
+
+    Dimensions Types:
+    
+    Conformed Dimension: A dimension that can be associated with different Fact Tables, maintaining the same meaning across all of them. For example, the Date dimension which retains the same meaning in all Fact Tables.
+    Degenerate Dimension: A Dimension Key in a Fact Table without a corresponding Dimension Table, such as OrderID.
+    Junk Dimension: A combination of low-cardinality fields or attributes into a single Dimension Table, like Payment Method, Promotion Type, and Delivery Type.
+    Role-Playing Dimension: Using the same Dimension Table for different roles in the same Fact Table, like Order Date, Ship Date, and Delivery Date.
+    Outrigger Dimension: Secondary Dimension Tables related to primary Dimension Tables to extend them with additional attributes.
+    Snowflake Dimension: A normalized structure for hierarchical attributes in a Dimension.
+    Shrunken Rollup Dimension: A Dimension that provides summarized levels for quick roll-up and drill-down analysis.
+    Swappable Dimension: A Dimension that can be swapped or interchanged for different analyses.
+    Slowly Changing Dimension (SCD): Dimensions that change slowly over time.
+    Fast Changing Dimension: Dimensions that change rapidly.
+    Heterogeneous Dimensions: Dimensions that combine data from various sources.
+    Multi-valued Dimensions: Dimensions that have multiple values for each record.
+    Detailed Explanation of Dimension Types:
+    
+    Conformed Dimension:
+    
+    A dimension used across multiple Fact Tables with the same meaning. For example, the Date dimension is shared among different Fact Tables and retains consistent information.
+    Degenerate Dimension:
+    
+    A Dimension Key in a Fact Table without an associated Dimension Table. For example, OrderID is stored directly in the Fact Table without a separate Dimension Table.
+    Junk Dimension:
+    
+    Combines multiple low-cardinality attributes into a single Dimension Table to reduce the number of Dimension Tables and improve performance. Examples include Payment Method (Credit Card, Cash, Check), Promotion Type (Discount, Buy One Get One Free, None), and Delivery Type (In-Store Pickup, Home Delivery).
+    Role-Playing Dimension:
+    
+    Uses the same Dimension Table for different roles within the same Fact Table. For instance, analyzing sales data using different date roles like Order Date, Ship Date, and Delivery Date.
+    Outrigger Dimension:
+    
+    Secondary Dimension Tables that extend primary Dimension Tables with additional attributes without complicating the primary structure. For example, a Products dimension with outrigger dimensions for Product Variations and Product Specifications.
+    Snowflake Dimension:
+    
+    A normalized structure for hierarchical attributes to organize the hierarchy better. This involves splitting different attributes of a Dimension into separate tables.
+    Shrunken Rollup Dimension:
+    
+    Provides summarized levels for quick roll-up and drill-down analysis, simplifying the data model.
+    Swappable Dimension:
+    
+    A Dimension that can be swapped between different contexts for varied analysis.
+    Slowly Changing Dimension (SCD):
+    
+    Dimensions that change slowly over time. Techniques include:
+    SCD Type 0: Keep original values without updating.
+    SCD Type 1: Overwrite old values with new values.
+    SCD Type 2: Create a new row for each change in attributes.
+    SCD Type 3: Track changes using separate columns.
+    SCD Type 4: Add mini-dimensions for changes.
+    Fast Changing Dimension:
+    
+    Dimensions that change rapidly over time. This involves separating rapidly changing attributes into Mini-Dimensions.
+    Heterogeneous Dimensions:
+    
+    Dimensions that combine data from various sources to provide a comprehensive analysis.
+    Multi-valued Dimensions:
+    
+    Dimensions that have multiple values for each record, used for complex relationships and analysis.
+    Practical Examples of Dimensions:
+    
+    Junk Dimension:
+    
+    In a retail company’s Data Warehouse, Fact Tables track sales transactions with attributes like Payment Method (Credit Card, Cash, Check), Promotion Type (Discount, Buy One Get One Free, None), Delivery Type (In-Store Pickup, Home Delivery), Gift Wrap (Yes, No), and Customer Type (New, Returning). These attributes can be combined into a single Junk Dimension Table to simplify the data model and improve performance.
+    Role-Playing Dimension:
+    
+    In sales data analysis, using different dates such as Order Date, Ship Date, and Delivery Date. Multiple copies of the Date Dimension are created for each role, and the Fact Table is linked to the appropriate Date Dimension.
+    Conclusion:
+    Understanding and correctly using different types of Dimensions in Dimensional Models enhances Query Performance, simplifies the data model, and provides comprehensive Business Insights.`,
+    6: `In the world of data warehousing, there are many types of dimension tables, which are used to categorize and analyze data. Some common types include:
+
+    Conformed Dimension: This dimension is used across different facts and maintains the same meaning and value throughout.
+    Degenerate Dimension: This is a dimension key that is stored in the fact table but does not have a separate dimension table.
+    Junk Dimension: A combination of miscellaneous, low-cardinality attributes.
+    Role-Playing Dimension: The same dimension used multiple times within a fact table but with different meanings.
+    Outrigger Dimension: A dimension that is linked to another dimension rather than directly to the fact table.
+    Snowflake Dimension: A more normalized form of a dimension table.
+    Shrunken Rollup Dimension: A dimension that is a subset of another dimension.
+    Swappable Dimension: A dimension with multiple versions that can be swapped based on query requirements.
+    Slowly Changing Dimension: A dimension that captures changes over time.
+    Fast Changing Dimension (or Mini Dimension): Used to handle rapidly changing attributes.
+    Heterogeneous Dimensions: Dimensions with varied types and structures.
+    Multi-valued Dimensions: Dimensions where a single fact is related to multiple values.
+    Multi-Valued Dimensions
+    For instance, in a family insurance company, you might have a policy holder, Mr. John, his wife Lisa, and their son Dave, all under the same policy number. This is an example of a multi-valued dimension because multiple family members are associated with one policy.
+    
+    To handle such cases, we use a bridge table. This table links the policy number to each family member without violating the table's grain, which is the level of detail stored in the table. Additionally, we use a weighting factor in the bridge table to allocate the total value (e.g., monthly premium) across the family members.
+    
+    Handling Multi-Valued Dimensions
+    There are different approaches:
+    
+    Choose One Value: Pick one value and ignore others, which might lead to loss of important details.
+    Extend Dimensions: Create multiple dimensions for each value, which can be cumbersome and inflexible.
+    Use Bridge Table: The most effective solution, allowing multiple values without losing detail.
+    Hot Swappable Dimensions
+    A hot swappable dimension allows you to switch between different versions of a dimension at query time. Each version might have different structures and attributes, but they all link back to the same fact table.
+    
+    Data Warehouse Development Approaches
+    Building a data warehouse is a complex task and can be approached in two main ways:
+    
+    Top-Down Approach (Inmon):
+    
+    Analyzes global business needs and implements the data warehouse as a whole.
+    It provides a single, integrated data source but is expensive and time-consuming.
+    Suitable for cross-functional reporting.
+    Bottom-Up Approach (Kimball):
+    
+    Builds data marts iteratively, each catering to specific business areas.
+    Quicker to implement and less risky but may lead to redundancy.
+    Allows for faster feedback and adjustments.
+    Data Warehouse Architectures
+    Different architectures support these approaches:
+    
+    Independent Data Marts: Simple and low-cost but can lead to inconsistent data.
+    Data Mart Bus Architecture: Links individual marts for better consistency but may have performance issues.
+    Hub-and-Spoke Architecture: Centralized data warehouse with dependent data marts, easy to customize but can cause data redundancy.
+    Centralized Data Warehouse: One large data warehouse serving all needs, reducing data redundancy but requiring careful design.
+    Key Terms
+    Granularity: The level of detail stored in a table.
+    Fact Table: Central table in a star schema that stores quantitative data for analysis.
+    Dimension Table: Stores attributes related to the facts, used to categorize and describe data.
+    Bridge Table: Used to resolve many-to-many relationships between facts and dimensions.
+    Weighting Factor: A numerical value used to allocate totals across related items in a bridge table.
+    By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your data warehousing test.`,
+    7: `In the world of data warehousing, ETL (Extract, Transform, Load) is a crucial process. Let's break down each part:
+
+    Purpose of ETL
+    The main goal of ETL is to transform raw data from different source systems into useful information for the data warehouse. Without ETL, we wouldn't have the strategic information needed for query processing in the data warehouse.
+    
+    Data Extraction
+    Extracting data means pulling information from various source systems. This could be a one-time job for system upgrades or an ongoing task for data warehousing. Key issues in data extraction include:
+    
+    Source Identification: Identifying where the data comes from.
+    Method of Extraction: Deciding if the extraction will be manual or tool-based.
+    Extraction Frequency: How often to extract data (daily, weekly, etc.).
+    Job Sequencing: Ensuring that jobs run in the correct order.
+    Exception Handling: Managing records that can't be extracted.
+    Data Transformation
+    After extraction, the raw data needs to be transformed to be usable in the data warehouse. This involves improving data quality by filling in missing values and ensuring the data is accurate. Key tasks include:
+    
+    Selection: Choosing the relevant data.
+    Splitting/Joining: Manipulating data parts, sometimes splitting them further or joining them from multiple sources.
+    Conversion: Standardizing data to make it usable and understandable.
+    Summarization: Aggregating data to higher levels when detailed data isn't necessary.
+    Enrichment: Simplifying and rearranging data to make it more useful.
+    Major Transformation Types
+    There are several types of data transformation:
+    
+    Format Revisions
+    Calculated and Derived Values
+    Splitting of Single Fields
+    Merging of Information
+    Character Set Conversion
+    Conversion of Units of Measurement
+    Date/Time Conversion
+    Summarization
+    Key Restructuring
+    Deduplication
+    Data Loading
+    Loading is the final step where the transformed data is applied to the data warehouse and stored in the database. There are different types of loading:
+    
+    Initial Load: Populating the data warehouse for the first time.
+    Incremental Load: Applying ongoing changes periodically.
+    Full Refresh: Completely erasing and reloading data.
+    Applying Data: Techniques and Processes
+    Different techniques for applying data include:
+    
+    Load: Replaces existing data with incoming data.
+    Append: Adds incoming data to existing data without removing old data. Duplicate handling can either add duplicates or reject them.
+    Destructive Merge: Updates existing records with matching keys or adds new records.
+    Constructive Merge: Adds new records and marks them as superseding the old records without removing them.
+    ETL Tools
+    There are various tools available to help with the ETL process, automating and simplifying the tasks involved.
+    
+    Key Terms
+    ETL: Extract, Transform, Load process.
+    Data Extraction: Pulling data from source systems.
+    Data Transformation: Converting raw data into a usable format.
+    Data Loading: Applying the transformed data to the data warehouse.
+    Initial Load: First-time data population.
+    Incremental Load: Periodic updates to the data.
+    Full Refresh: Complete data replacement.
+    Append: Adding new data while keeping existing data.
+    Destructive Merge: Updating or adding new data by replacing old data.
+    Constructive Merge: Adding new data without removing old data.
+    By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your ETL test.
+    
+    `,
+    8: `In the world of data warehousing, OLAP (Online Analytical Processing) is a key technology that helps analysts extract and view business data from different perspectives. Let's explore the main concepts and types of OLAP:
+
+    What is OLAP?
+    OLAP allows analysts to perform complex queries on data quickly and easily. It is not a database design technique but rather a way to enable fast and interactive data analysis. OLAP databases are divided into cubes, which are designed to make report creation and viewing easier.
+    
+    Key Features of OLAP
+    Multidimensional Data: OLAP deals with multidimensional data, meaning data can be viewed from multiple perspectives.
+    Pre-calculated Data: Data in OLAP is often pre-calculated and aggregated to speed up analysis.
+    Cubes: OLAP databases use cubes to store and analyze data in a logical and organized manner.
+    OLAP Analysis Types
+    Ad hoc Analysis: This type of analysis is done on the fly to answer specific questions or investigate particular issues. It is flexible, unplanned, and often used for quick insights.
+    Interactive Analysis: This type involves predefined dashboards or reports that users can interact with in real-time. It supports ongoing monitoring and decision-making based on real-time data.
+    OLAP Operations
+    Roll-up (Aggregation): This operation summarizes data by climbing up a hierarchy or reducing dimensions.
+    Drill-down: This operation breaks down data into finer details, opposite of roll-up.
+    Slice: This operation selects a single dimension to create a sub-cube, acting as a filter.
+    Dice: This operation selects two or more dimensions to create a sub-cube.
+    Pivot (Rotate): This operation rotates the data axes to provide different views of the data.
+    OLAP Models
+    MOLAP (Multidimensional OLAP): Uses a multidimensional data model. Data is pre-computed and stored in a cube, allowing for fast query performance.
+    
+    Advantages: Fast indexing, easy to use, good for inexperienced users.
+    Disadvantages: Limited detailed data storage, difficult to change dimensions, low storage utilization.
+    Examples: Oracle Essbase, SAP Business Intelligence, Yellowfin.
+    ROLAP (Relational OLAP): Uses a relational database to store data. It bridges the gap between relational databases and OLAP.
+    
+    Advantages: High data efficiency, scalable, good for large data volumes.
+    Disadvantages: Requires more resources, slow query performance compared to MOLAP.
+    HOLAP (Hybrid OLAP): Combines features of both MOLAP and ROLAP. Uses two databases: one for aggregated data (MOLAP) and one for detailed data (ROLAP).
+    
+    Advantages: Economizes disk space, fast performance, real-time data access.
+    Disadvantages: Greater complexity, potential overlaps in functionalities.
+    Key Terms
+    Cube: A data structure that allows for multidimensional analysis.
+    Aggregation: The process of summarizing data.
+    Roll-up: Aggregating data by reducing dimensions.
+    Drill-down: Breaking down data into more detailed levels.
+    Slice: Filtering data by selecting a single dimension.
+    Dice: Filtering data by selecting multiple dimensions.
+    Pivot: Rotating data to view it from different perspectives.
+    MOLAP: Multidimensional OLAP, fast but less flexible.
+    ROLAP: Relational OLAP, flexible but slower.
+    HOLAP: Hybrid OLAP, combines MOLAP and ROLAP features.
+    By understanding these concepts and how they apply to real-world scenarios, you'll be well-prepared for your OLAP test.`
+};
+
 function Landing() {
     const [selectedLecture, setSelectedLecture] = useState(7);
     const [filteredQuestions, setFilteredQuestions] = useState([]);
     const [selectedAnswers, setSelectedAnswers] = useState({});
     const [isCorrect, setIsCorrect] = useState({});
-
-    const audioRef = useRef(null); // Create a ref for the audio element
-
+    const audioRef = useRef(null);
 
     useEffect(() => {
-        // Filter questions based on selected lecture
         const filtered = questionsData.filter(q => q.lecture === selectedLecture);
         setFilteredQuestions(filtered);
         setSelectedAnswers({});
         setIsCorrect({});
     }, [selectedLecture]);
+
+
 
     const handleLectureChange = (e) => {
         setSelectedLecture(parseInt(e.target.value));
@@ -4898,9 +5393,10 @@ function Landing() {
             audioRef.current.play();
             setTimeout(() => {
                 audioRef.current.pause();
-            }, 1000); // Pause the sound after 1 second
+            }, 1000);
         }
     };
+
 
     return (
         <>
@@ -4931,6 +5427,9 @@ function Landing() {
                             </div>
                         </div>
                         <div className='col-12'>
+                            <div className='lecture-summary'>
+                                <h2 className={`lec-${selectedLecture}`}>{lectureSummaries[selectedLecture]}</h2>
+                            </div>
                             <div className='question-content'>
                                 {filteredQuestions.map(question => (
                                     <div key={question.id} className='question'>
