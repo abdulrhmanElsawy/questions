@@ -6874,7 +6874,9 @@ function Landing2() {
                 Made By <a target='_blank' href="https://abdulrhmanelsawy.github.io/abdelrhman-elsawy/"> Abdelrhman Elsawy </a>
             </div>
 
+
                     <audio className='hide' ref={audioRef} src={correctSound} /> {/* Add the audio element */}
+
 
             <section className='landing'>
                 <div className='container'>
@@ -6939,6 +6941,9 @@ function Landing2() {
                     </div>
                 </div>
             </section>
+
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="abdelrhman-elsawy-365632204" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://eg.linkedin.com/in/abdelrhman-elsawy-365632204?trk=profile-badge"></a></div>
+
         </>
     );
 }
