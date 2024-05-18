@@ -7,7 +7,8 @@ import React, { useState, useRef } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-import Landing from './components/Landing';
+import Landing2 from './components/Landing2';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 
 
@@ -16,7 +17,8 @@ function App() {
 return (
     <div className="App">
             
-        <Landing />
+        <Landing2 />
+        <ScrollToTopButton />
 
 
         
