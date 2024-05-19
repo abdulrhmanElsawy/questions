@@ -3517,8 +3517,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "b",
-        "reason": "Block-based storage systems can use both scale-up and scale-out architectures."
+        "correct": "a",
+        "reason": "."
     },
     {
         "lecture": 5,
@@ -3528,8 +3528,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "a",
-        "reason": "A controller of a block-based storage system does consist of 9 key components."
+        "correct": "b",
+        "reason": "."
     },
     {
         "lecture": 5,
