@@ -2142,7 +2142,7 @@ const questionsData = [
             "c": "Hybrid",
             "d": "A and B"
         },
-        "correct": "d",
+        "correct": "a",
         "reason": "Infrastructure can be transformed into either private or public cloud."
     },
     {
@@ -3506,8 +3506,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "b",
-        "reason": "Block-based storage systems provide block-level access, not volumes."
+        "correct": "a",
+        "reason": "."
     },
     {
         "lecture": 5,
@@ -3781,8 +3781,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "b",
-        "reason": "LUNs in both expansions must reside on the same drive type like SSDs, Fibre Channel, or ATA."
+        "correct": "a",
+        "reason": "."
     },
     {
         "lecture": 5,
@@ -4267,8 +4267,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "b",
-        "reason": "This statement is false; users may have different access controls."
+        "correct": "a",
+        "reason": "."
     },
     {
         "lecture": 6,
@@ -4302,8 +4302,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "b",
-        "reason": "This statement is false; FTP is indeed a client-server protocol for data transfer."
+        "correct": "a",
+        "reason": "."
     },
     {
         "lecture": 6,
@@ -4568,8 +4568,8 @@ const questionsData = [
             "a": "True",
             "b": "False"
         },
-        "correct": "a",
-        "reason": "NAS heads use front-end ports for storage connectivity."
+        "correct": "b",
+        "reason": "."
     },
     {
         "lecture": 6,
