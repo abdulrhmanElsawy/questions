@@ -1633,8 +1633,8 @@ const questionsData = [
             "c": "Storage",
             "d": "All of the above"
         },
-        "correct": "a",
-        "reason": "MapReduce processes, stores, and retrieves data efficiently."
+        "correct": "b",
+        "reason": "Query processes, stores, and retrieves data efficiently."
     },
     {
         "lecture": 2,
@@ -1659,8 +1659,8 @@ const questionsData = [
             "c": "Storage",
             "d": "All of the above"
         },
-        "correct": "a",
-        "reason": "MapReduce handles distributed, non-relational, non-structured data."
+        "correct": "c",
+        "reason": "Storage handles distributed, non-relational, non-structured data."
     },
     {
         "lecture": 2,
