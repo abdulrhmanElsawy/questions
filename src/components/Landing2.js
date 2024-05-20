@@ -2376,8 +2376,8 @@ const questionsData = [
             "c": "Services operation management",
             "d": "Both a and b"
         },
-        "correct": "b",
-        "reason": "Storage operation management handles these tasks."
+        "correct": "a",
+        "reason": "."
     },
     {
         "lecture": 3,
@@ -3529,7 +3529,7 @@ const questionsData = [
             "b": "False"
         },
         "correct": "b",
-        "reason": "."
+        "reason": "A controller of a block-based storage system consist of 3 key components."
     },
     {
         "lecture": 5,
