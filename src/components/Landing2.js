@@ -544,7 +544,7 @@ const questionsData = [
             "c": "Security",
             "d": "All of them"
         },
-        "correct": "b",
+        "correct": "d",
         "reason": "Storage is a core component in IT infrastructure."
     },
     {
