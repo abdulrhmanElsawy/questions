@@ -219,3 +219,7 @@
     background-color: #000;
     color: #fff;
 }
+
+iframe{
+    width: 100% !important;
+}

@@ -6939,10 +6939,11 @@ function Landing2() {
                             </div>
                         </div>
                     </div>
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="abdelrhman-elsawy-365632204" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://eg.linkedin.com/in/abdelrhman-elsawy-365632204?trk=profile-badge"></a></div>
+
                 </div>
             </section>
 
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="abdelrhman-elsawy-365632204" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://eg.linkedin.com/in/abdelrhman-elsawy-365632204?trk=profile-badge"></a></div>
 
         </>
     );
