@@ -14,8 +14,8 @@ return (
     <Router>
     <div className="App">
         <Routes>
-        <Route path="/" element={<Landing3 />} />
-        <Route path="/icm" element={<Landing2 />} />
+        <Route path="/questions/" element={<Landing3 />} />
+        <Route path="/questions/icm" element={<Landing2 />} />
 
         {/* Add more routes here */}
         </Routes>
