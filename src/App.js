@@ -11,7 +11,7 @@ import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
 return (
-    <Router basename="/questions">
+    <Router>
     <div className="App">
         <Routes>
         <Route path="/icm" element={<Landing2 />} />
